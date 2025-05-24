@@ -1,0 +1,5 @@
+This is a quick demonstration of making a LSTM RNN model for sentiment analysis of 50k IMDB movie reviews. It includes the packages used (tensorflow for the RNN, NLTK for lemmatization, pandas and kaggle for the dataset, sklearn for test/training data split,
+and matplotlib for graphing the results). For preprocessing text, I tested with and without lemmatization and found the accuracy to be nearly identical, so lemmatization is probably not needed for an RNN, but since the processing time is still quick it wasn't removed.
+I also tested with stopword removal using the standard NLTK list and found the accuracy to significantly drop because some stopwords convey important meaning to the review such as no, nor, and not, so I commented that out. Further optimizations could be made by using
+other techniques for preprocessing the text and optimizing the hyperparmaeters of the RNN, but since I was satisfied with the accuracy, I did not experiment too much with fine tuning (although I am interested in potentially expanding on how these could affect other
+types of NLP problems).
